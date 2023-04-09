@@ -38,8 +38,8 @@ def get_args():
     data     = sys.argv[data_idx + 1].split(',') if data_idx > 0 and data_idx + 1 < len(sys.argv) else ['name', 'download_count', 'url']
     file_idx = list_find(sys.argv, '--file')
     file     = sys.argv[file_idx + 1]if file_idx > 0 and file_idx + 1 < len(sys.argv) else None
-    sep_idx = list_find(sys.argv, '--sep')
-    sep     = sys.argv[sep_idx + 1]if sep_idx > 0 and sep_idx + 1 < len(sys.argv) else ';'
+    sep_idx  = list_find(sys.argv, '--sep')
+    sep      = sys.argv[sep_idx + 1]if sep_idx > 0 and sep_idx + 1 < len(sys.argv) else ';'
 
     return mod_id, logs, sort, data, file, sep
 
